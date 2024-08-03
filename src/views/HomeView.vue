@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md">
-    <div class="q-py-md"><q-btn color="primary" icon="add" @click="onCreate" /></div>
+    <div class="q-py-md"><q-btn label="Add" color="primary" icon="add" @click="onCreate" /></div>
     <q-table
       title="Users"
       :rows="rows"
@@ -14,8 +14,8 @@
   </template>
   <template v-slot:body-cell-actions="props">
     <q-td class="q-gutter-sm" :props="props">
-      <q-btn color="warning" icon="mode_edit" @click="onEdit(props.row.id)" />
-      <q-btn color="negative" icon="delete" @click="onDelete(props.row.id)" />
+      <q-btn  color="warning" icon="mode_edit" @click="onEdit(props.row.id)" />
+      <q-btn  color="negative" icon="delete" @click="onDelete(props.row.id)" />
     </q-td>
   </template>
   </q-table>
